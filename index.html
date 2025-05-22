@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center; /* horizontal center */
+      align-items: center;     /* vertical center */
+      background-color: #f4f4f4;
+    }
+
+    .grid-container {
+      display: grid;
+      background-color: #aaa; /* gray canvas */
+      gap: 10px;
+      background-color: #aaa;
+      width: 748px;
+      height: 748px;
+      position: relative; /* <-- make it the positioning context */
+    }
+
+    .grid-item1 {
+      display: flex;
+
+      font-weight: bold;
+      font-size: 50px;
+      border-right: 9px solid black;
+      border-bottom: 9px solid black; /* black inner lines only */
+
+      width: 320px;
+      height: 414px;
+
+      background-color: red; /* 🔴 this fills the box */
+    }
+
+    .grid-item2 {
+      display: flex;
+      font-weight: bold;
+      font-size: 50px;
+      
+      border-right: 9px solid black;
+      border-bottom: 9px solid black;
+
+      width: 320px;
+      height: 300px;
+      align-self:flex-end ;
+      transform: translateY(-17px);
+
+      
+    }
+
+
+    
+    .grid-item3 {
+      display: flex;
+      font-weight: bold;
+      font-size: 50px;
+      width: 320px;
+      height: 296px;
+
+      border-right: 9px solid black;
+      border-bottom: 9px solid black;
+
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      /* adjust up and left */
+      transform: translate(-90px, 415px); /* X (left), Y (up) */
+
+      background-color: rgb(0, 255, 106); /* 🔴 this fills the box */
+    }
+
+.grid-item4 {
+  display: flex;
+  font-weight: bold;
+  font-size: 50px;
+  width: 420px;
+  height: 414px;
+
+  
+  border-left: 9px solid black;
+  border-bottom: 9px solid black;
+
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  /* adjust up and left */
+  transform: translate(0px, -325px); /* X (left), Y (up) */
+
+  background-color: rgb(255, 0, 255); /* 🔴 this fills the box */
+}
+
+.grid-item5
+{
+  display: flex;
+  font-weight: bold;
+  font-size: 50px;
+  width: 198px;
+  height: 30px;
+
+  border-right: 9px solid black;
+  border-left: 9px solid black;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  /* adjust up and left */
+  transform: translate(320px, -0px); /* X (left), Y (up) */
+
+  background-color: rgb(255, 238, 0); /* 🔴 this fills the box */
+}
+
+.grid-item6
+{
+  display: flex;
+  font-weight: bold;
+  font-size: 50px;
+  width: 90px;
+  height: 200px;
+
+  border-top: 15px solid black;
+  border-left: 9px solid black;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  /* adjust up and left */
+  transform: translate(648px, -0px); /* X (left), Y (up) */
+
+  background-color: rgb(0, 119, 255); /* 🔴 this fills the box */
+}
+
+  </style>
+</head>
+
+<body>
+   <div class="grid-container">
+    <div class="grid-item1">1</div>
+    <div class="grid-item2">2</div>
+    <div class="grid-item3">3</div>
+    <div class="grid-item4">4</div>
+    <div class="grid-item5">5</div>
+    <div class="grid-item6">6</div>
+
+  </div>
+</body>
+
+</html>
